@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>খুলনা বিভাগ - সেন্ট্রাল ড্যাসবোর্ড</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen text-gray-800">
+
+    <div class="max-w-6xl mx-auto px-4 py-8">
+        <div class="text-center mb-8 bg-gradient-to-r border border-slate-100 from-slate-800 to-slate-900 text-white py-6 rounded-2xl shadow-md">
+            <h1 class="text-3xl font-bold tracking-wide">খুলনা বিভাগ (Khulna Division)</h1>
+            <p class="text-slate-300 mt-2 text-sm font-medium">সেন্ট্রাল রিসোর্স এবং ডেটা ড্যাসবোর্ড</p>
+        </div>
+
+        <div class="flex flex-wrap justify-center gap-4 mb-8">
+            <a href="https://docs.google.com/spreadsheets/d/1kh2KNmW43nvxMPDoYBM52AG4TOKirFohgaFB37jCzYA/" target="_blank" class="inline-flex items-center gap-2 bg-purple-600 text-white px-6 py-3.5 rounded-xl font-bold text-base hover:bg-purple-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                <span class="text-xl">🗄️</span> শাখা ডেটাবেস ↗
+            </a>
+            
+            <a href="https://docs.google.com/spreadsheets/d/1LDR3wtr8GH1LF0DIJ2AKGZIyPpxE6OxPVbeNB4fYlI8/" target="_blank" class="inline-flex items-center gap-2 bg-teal-600 text-white px-6 py-3.5 rounded-xl font-bold text-base hover:bg-teal-700 transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+                <span class="text-xl">📝</span> ডেইলি রিপোর্ট সিট ↗
+            </a>
+        </div>
+
+        <div class="flex justify-center mb-8 flex-wrap gap-2">
+            <div class="bg-white p-1.5 rounded-xl shadow-sm border border-gray-200 flex flex-wrap gap-1">
+                <button onclick="switchTab('master-tab', 'master-content')" id="master-tab" class="tab-btn px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 bg-slate-800 text-white shadow">
+                    📊 মাস্টার ট্রানজেকশন
+                </button>
+                <button onclick="switchTab('batch7-tab', 'batch7-content')" id="batch7-tab" class="tab-btn px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 text-gray-600 hover:text-slate-900 hover:bg-gray-100">
+                    🎓 ৭ম ব্যাচ ডেটা সিট
+                </button>
+                <button onclick="switchTab('facebook-tab', 'facebook-content')" id="facebook-tab" class="tab-btn px-6 py-2.5 rounded-lg text-sm font-semibold transition-all duration-200 text-gray-600 hover:text-slate-900 hover:bg-gray-100">
+                    📱 ফেসবুক পেইজ
+                </button>
+            </div>
+        </div>
+
+        <div id="master-content" class="tab-content block">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-6 py-4 bg-gray-50 border-b border-gray-200">
+                    <h3 class="font-bold text-lg text-slate-800">মাস্টার ট্রানজেকশন সিট সমূহ (১০ টি জেলা)</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 border-b border-gray-200 text-slate-700 text-sm font-semibold">
+                                <th class="py-4 px-6">জেলার নাম (District)</th>
+                                <th class="py-4 px-6 text-right">গুগল সিট লিংক (Google Sheet Link)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm font-medium">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১. কুষ্টিয়া</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1snyaSAoqLxfULZ1c4bkPZcVshLzpPxHsCdwCUVmkno4/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">২. মেহেরপুর</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1rPmaEa2Vb4XDdj09KivLqEfljTdcHaY6m3Hjg_T_taE/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৩. চুয়াডাঙ্গা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1KHNW_KlQR226HsHo2ncmzI99K2nV9lEAoUToDmuPKz8/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৪. ঝিনাইদহ</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1fp5gh6A6Z-ahlbTkE24p0JXcJJ34alVWtv_l2c2QBO0/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৫. মাগুরা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1IiwOSgFGrwdfFC2yYfdAniW4SPeiKebJg3XgO6JW11Q/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৬. যশোর</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1mCwqsl1CgNJOwTnXJ2TzCe5UYNst8u_PhoNnykRAz3o/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৭. খুলনা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1vS0T3Zonvvk4TsyDdElLrRF0cZbC89_K2T16CR3cbZk/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৮. বাগেরহাট</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1Ncw3JsnSkBQpkPPt-ZbnmoQrLVjmfdG80SLxUT7WaXM/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৯. সাতক্ষীরা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1atO9I5u0dS0q_sVU8Z-tm4W1FGRpxO2s6WtEJfh1eHk/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১০. নড়াইল</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1VP5RiDXASXW3pB-N3hwcrldEMjw5kBlIpV1B-kJssIM/" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="batch7-content" class="tab-content hidden">
+            
+            <div class="mb-6 p-5 bg-blue-50 border border-blue-200 rounded-2xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <div class="flex items-center space-x-3">
+                    <span class="text-3xl">🚀</span>
+                    <div>
+                        <h4 class="font-bold text-blue-900 text-base">৭ম ব্যাচ ডেটা ড্যাসবোর্ড (প্রধান লিংক)</h4>
+                        <p class="text-blue-700 text-xs mt-0.5">সকল ব্রাঞ্চের সামগ্রিক ডেটা অ্যানালিটিক্স এবং প্রগ্রেস ট্র্যাকিং</p>
+                    </div>
+                </div>
+                <a href="https://docs.google.com/spreadsheets/d/1WzPO3Ys-WhEbsMH7jkX7RodQtO1F3lKT3WHjoR7BnCU/" target="_blank" class="bg-blue-600 text-white px-5 py-2.5 rounded-xl font-semibold text-sm hover:bg-blue-700 transition shadow-sm whitespace-nowrap">
+                    ড্যাসবোর্ড ওপেন করুন ↗
+                </a>
+            </div>
+
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-6 py-4 bg-gray-50 border-b border-gray-200">
+                    <h3 class="font-bold text-lg text-slate-800">৭ম ব্যাচ - ব্রাঞ্চ ভিত্তিক ডেটা সিট (১১ টি ব্রাঞ্চ)</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 border-b border-gray-200 text-slate-700 text-sm font-semibold">
+                                <th class="py-4 px-6">ব্রাঞ্চের নাম (Branch)</th>
+                                <th class="py-4 px-6 text-right">গুগল সিট লিংক (Google Sheet Link)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm font-medium">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১. কুষ্টিয়া</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1JdUYTmb-sfUWXlCGhqLuuBlxq3RJPMAA-D7JMT7IkX4/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">২. মেহেরপুর</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1qO4JKgn3eyBXianRyXSk9eW-3Jmpgl-oPZvNje2M0Eo/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৩. চুয়াডাঙ্গা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1pt10MWYwpabSOZB2BYWjwAeKFSc1tvbCWadX8qOHjgY/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৪. ঝিনাইদহ</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1lDJNjGizlqTmJmiu1z91RZtl45orJ4mzFSv2kCiw4H4/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৫. মাগুরা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1YOEnF6ImOBsW5hKiJUVO2b-BgwNXDwCNCJcNSYuf8os/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৬. নড়াইল</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/11opVTbEzNtL6vTQCtXSPYk9U-zPvvITR-fcjOK2LOsg/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৭. যশোর</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1k_u3HQXSs_mWzyrEgU1nwd7fbx0EqXLWMvJEOFo7zSg/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৮. খুলনা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1DGB05UAh8Lt9wOu_FNv98z5zKbdYLbohnSBT9-koRjw/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৯. বাগেরহাট</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/10Qc-g_3861tpXqmzTAmebG_zWuvUfQw3sSw73Y7iPf0/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১০. সাতক্ষীরা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1BpSHwpqZSyR-f-M3jkKtlm8VOmem8tpDvBKhcd-hk08/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১১. পারুলিয়া</td>
+                                <td class="py-4 px-6 text-right"><a href="https://docs.google.com/spreadsheets/d/1jvLoxis41Y2DbyjVRTtKiPxJm76e9_k-W-1J_ZRkA0E/" target="_blank" class="inline-flex items-center text-emerald-600 hover:text-emerald-800 hover:underline">সিট দেখুন <span class="ml-1 text-xs">🔗</span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div id="facebook-content" class="tab-content hidden">
+            <div class="bg-white rounded-2xl shadow-sm border border-gray-200 overflow-hidden">
+                <div class="px-6 py-4 bg-gray-50 border-b border-gray-200">
+                    <h3 class="font-bold text-lg text-slate-800">সকল শাখার ফেসবুক পেইজ (১০ টি শাখা)</h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left border-collapse">
+                        <thead>
+                            <tr class="bg-slate-100 border-b border-gray-200 text-slate-700 text-sm font-semibold">
+                                <th class="py-4 px-6">ব্রাঞ্চের নাম (Branch)</th>
+                                <th class="py-4 px-6 text-right">ফেসবুক লিংক (Facebook Link)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-gray-100 text-sm font-medium">
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১. কুষ্টিয়া</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.kushtia" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">২. মেহেরপুর</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elel.meherpur" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৩. চুয়াডাঙ্গা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.chuadanga" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৪. ঝিনাইদহ</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.jhenaidah" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৫. মাগুরা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.magura" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৬. যশোর</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.jessore" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৭. খুলনা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elel.khulna" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৮. বাগেরহাট</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.bagerhat" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">৯. সাতক্ষীরা</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.satkhira" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                            <tr class="hover:bg-slate-50 transition-colors">
+                                <td class="py-4 px-6 text-slate-700">১০. নড়াইল</td>
+                                <td class="py-4 px-6 text-right"><a href="https://www.facebook.com/elaeltd.Narail" target="_blank" class="inline-flex items-center text-indigo-600 hover:text-indigo-800 hover:underline">পেইজ ভিজিট করুন <span class="ml-1 text-xs">↗</span></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        function switchTab(activeTabId, activeContentId) {
+            // Hide all tab contents
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.add('hidden'));
+            contents.forEach(content => content.classList.remove('block'));
+
+            // Reset all tab button styles
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('bg-slate-800', 'text-white', 'shadow');
+                btn.classList.add('text-gray-600', 'hover:text-slate-900', 'hover:bg-gray-100');
+            });
+
+            // Activate chosen tab content
+            document.getElementById(activeContentId).classList.remove('hidden');
+            document.getElementById(activeContentId).classList.add('block');
+
+            // Set active styles for chosen tab button
+            const activeBtn = document.getElementById(activeTabId);
+            activeBtn.classList.add('bg-slate-800', 'text-white', 'shadow');
+            activeBtn.classList.remove('text-gray-600', 'hover:text-slate-900', 'hover:bg-gray-100');
+        }
+    </script>
+</body>
+</html>
